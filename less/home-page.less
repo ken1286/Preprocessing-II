@@ -14,7 +14,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
     
     .text-content {
       width: 48%;
@@ -27,6 +26,16 @@
 
       img {
         border-radius: 10px;
+      }
+    }
+
+    @media @mobile {
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+      .text-content, .img-content {
+        width: 100%;
       }
     }
   }
@@ -43,6 +52,16 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+
+    @media @mobile {
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+      .img-content {
+        order: 2;
+      }
     }
   }
 
@@ -69,5 +88,16 @@
         .custom-btn();
       }
     }
+
+    @media @mobile {
+      flex-flow: column nowrap;
+      align-items: center;
+
+      .destination {
+        width: 65%;
+      }
+    }
   }
+
+  
 }// home

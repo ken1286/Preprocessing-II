@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+.navigation {
+	width: 100%;
+	display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px dashed @navigation-border;
+  
+  h1 {
+    margin-right: auto;
+  }
+
+	nav {
+		width: 40%;
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			text-decoration: none;
+			color: @font-color;
+			font-size: 1.8rem;
+			margin: 1%;
+		}
+  }
+  
+  @media @mobile {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    nav {
+      width: 100%;
+    }
+
+    h1 {
+      margin: auto 0;
+    }
+  }
+}
